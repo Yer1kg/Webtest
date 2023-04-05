@@ -1,0 +1,138 @@
+ERROR - 2022-12-22 12:15:41 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\codeigniterlearn\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\codeigniterlearn\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', '', 'zooweb', 3306, '', 0)
+#1 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 C:\xampp\htdocs\codeigniterlearn\system\Model.php(398): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\codeigniterlearn\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\codeigniterlearn\app\Controllers\User.php(408): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(927): App\Controllers\User->getBorrarusuario('11')
+#8 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniterlearn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniterlearn\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\codeigniterlearn\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#3 C:\xampp\htdocs\codeigniterlearn\system\Model.php(398): CodeIgniter\Database\BaseBuilder->update(Array)
+#4 C:\xampp\htdocs\codeigniterlearn\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#5 C:\xampp\htdocs\codeigniterlearn\app\Controllers\User.php(408): CodeIgniter\BaseModel->delete(Array)
+#6 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(927): App\Controllers\User->getBorrarusuario('11')
+#7 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniterlearn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniterlearn\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-12-22 12:15:41 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `usuarios` SET `deleted_at` = :deleted_at:
+WHERE `id` = :id:
+AND `id` IN :id.1:
+AND `deleted_at` IS NULL', [...], false)
+ 3 SYSTEMPATH\Model.php(398): CodeIgniter\Database\BaseBuilder->update([...])
+ 4 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 5 APPPATH\Controllers\User.php(408): CodeIgniter\BaseModel->delete([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->getBorrarusuario('11')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 12:17:57 --> Undefined variable $usuario
+in APPPATH\Views\usuarios\editar.php on line 15.
+ 1 APPPATH\Views\usuarios\editar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\usuarios\\editar.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\User.php(378): view('usuarios/editar', [...])
+ 6 APPPATH\Controllers\User.php(304): App\Controllers\User->validarYGrabar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->postEditar('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 12:24:00 --> Undefined variable $usuario
+in APPPATH\Views\usuarios\editar.php on line 15.
+ 1 APPPATH\Views\usuarios\editar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\usuarios\\editar.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\User.php(378): view('usuarios/editar', [...])
+ 6 APPPATH\Controllers\User.php(304): App\Controllers\User->validarYGrabar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->postEditar('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 12:33:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`zooweb`.`usuarios`, CONSTRAINT `usuario_rol` FOREIGN KEY (`rol`) REFERENCES `roles` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\codeigniterlearn\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\codeigniterlearn\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `usuario...', 0)
+#1 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 C:\xampp\htdocs\codeigniterlearn\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\codeigniterlearn\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\codeigniterlearn\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\codeigniterlearn\system\BaseModel.php(657): CodeIgniter\Model->update('2', Array)
+#8 C:\xampp\htdocs\codeigniterlearn\app\Controllers\User.php(341): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\codeigniterlearn\app\Controllers\User.php(304): App\Controllers\User->validarYGrabar('2')
+#10 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(927): App\Controllers\User->postEditar('2')
+#11 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#12 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\codeigniterlearn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\codeigniterlearn\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2022-12-22 12:33:50 --> Cannot add or update a child row: a foreign key constraint fails (`zooweb`.`usuarios`, CONSTRAINT `usuario_rol` FOREIGN KEY (`rol`) REFERENCES `roles` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `usuarios` SET `nombre` = NULL, `email` = NULL, `apellidos` = NULL, `rol` = NULL
+WHERE `usuarios`.`id` IN (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuarios` SET `nombre` = NULL, `email` = NULL, `apellidos` = NULL, `rol` = NULL
+WHERE `usuarios`.`id` IN (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuarios` SET `nombre` = NULL, `email` = NULL, `apellidos` = NULL, `rol` = NULL
+WHERE `usuarios`.`id` IN (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `usuarios` SET `nombre` = :nombre:, `email` = :email:, `apellidos` = :apellidos:, `rol` = :rol:
+WHERE `usuarios`.`id` IN :usuarios.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(657): CodeIgniter\Model->update('2', [...])
+ 9 APPPATH\Controllers\User.php(341): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\User.php(304): App\Controllers\User->validarYGrabar('2')
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->postEditar('2')
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 12:37:36 --> Invalid file: usuarios/exito.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/exito.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/exito', [], true)
+ 3 APPPATH\Controllers\User.php(358): view('usuarios/exito', [...])
+ 4 APPPATH\Controllers\User.php(304): App\Controllers\User->validarYGrabar('2')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->postEditar('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 12:59:28 --> Undefined array key "nombre"
+in APPPATH\Controllers\User.php on line 192.
+ 1 APPPATH\Controllers\User.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'APPPATH\\Controllers\\User.php', 192)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->mostrarPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 13:00:48 --> Undefined array key "nombre"
+in APPPATH\Controllers\User.php on line 192.
+ 1 APPPATH\Controllers\User.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'APPPATH\\Controllers\\User.php', 192)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->mostrarPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

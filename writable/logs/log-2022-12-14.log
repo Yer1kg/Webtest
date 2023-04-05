@@ -1,0 +1,150 @@
+CRITICAL - 2022-12-14 09:28:31 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'Optional parameter $idAEditar declared before required parameter $datos is implicitly treated as a required parameter', 'APPPATH\\Models\\ZooModel.php', 24)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Optional parameter $idAEditar declared before required parameter $datos is implicitly treated as a required parameter', 'APPPATH\\Models\\ZooModel.php', 24)
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('SYSTEMPATH\\Debug\\Exceptions.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\ZooModel.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ZooModel')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ZooModel')
+ 7 SYSTEMPATH\Config\Factories.php(155): class_exists('App\\Models\\ZooModel')
+ 8 SYSTEMPATH\Config\Factories.php(125): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\ZooModel')
+ 9 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 SYSTEMPATH\Common.php(809): CodeIgniter\Config\Factories::models('App\\Models\\ZooModel', [...], null)
+11 APPPATH\Controllers\Zoo.php(288): model('App\\Models\\ZooModel')
+12 APPPATH\Controllers\Zoo.php(25): App\Controllers\Zoo->devolverListadoCompleto()
+13 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Zoo->getIndex()
+14 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zoo))
+15 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-14 09:28:39 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'Optional parameter $idAEditar declared before required parameter $datos is implicitly treated as a required parameter', 'APPPATH\\Models\\ZooModel.php', 24)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Optional parameter $idAEditar declared before required parameter $datos is implicitly treated as a required parameter', 'APPPATH\\Models\\ZooModel.php', 24)
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('SYSTEMPATH\\Debug\\Exceptions.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\ZooModel.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ZooModel')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ZooModel')
+ 7 SYSTEMPATH\Config\Factories.php(155): class_exists('App\\Models\\ZooModel')
+ 8 SYSTEMPATH\Config\Factories.php(125): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\ZooModel')
+ 9 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 SYSTEMPATH\Common.php(809): CodeIgniter\Config\Factories::models('App\\Models\\ZooModel', [...], null)
+11 APPPATH\Controllers\Zoo.php(288): model('App\\Models\\ZooModel')
+12 APPPATH\Controllers\Zoo.php(25): App\Controllers\Zoo->devolverListadoCompleto()
+13 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Zoo->getIndex()
+14 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zoo))
+15 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-14 11:27:25 --> Optional parameter $idAEditar declared before required parameter $datos is implicitly treated as a required parameter
+in APPPATH\Models\ZooModel.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Optional parameter $idAEditar declared before required parameter $datos is implicitly treated as a required parameter', 'APPPATH\\Models\\ZooModel.php', 24)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\ZooModel.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ZooModel')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ZooModel')
+ 6 SYSTEMPATH\Config\Factories.php(155): class_exists('App\\Models\\ZooModel')
+ 7 SYSTEMPATH\Config\Factories.php(125): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\ZooModel')
+ 8 SYSTEMPATH\Config\Factories.php(86): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 SYSTEMPATH\Common.php(809): CodeIgniter\Config\Factories::models('App\\Models\\ZooModel', [...], null)
+10 APPPATH\Controllers\Zoo.php(288): model('App\\Models\\ZooModel')
+11 APPPATH\Controllers\Zoo.php(25): App\Controllers\Zoo->devolverListadoCompleto()
+12 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Zoo->getIndex()
+13 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zoo))
+14 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-14 11:34:49 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\codeigniterlearn\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\codeigniterlearn\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('127.0.0.1', 'root', '', 'zooweb', 3306, '', 0)
+#1 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniterlearn\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniterlearn\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniterlearn\app\Models\ZooModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniterlearn\app\Controllers\Zoo.php(296): App\Models\ZooModel->getZoo()
+#8 C:\xampp\htdocs\codeigniterlearn\app\Controllers\Zoo.php(25): App\Controllers\Zoo->devolverListadoCompleto()
+#9 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(927): App\Controllers\Zoo->getIndex()
+#10 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zoo))
+#11 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniterlearn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\codeigniterlearn\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\codeigniterlearn\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\codeigniterlearn\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\codeigniterlearn\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\codeigniterlearn\app\Models\ZooModel.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\codeigniterlearn\app\Controllers\Zoo.php(296): App\Models\ZooModel->getZoo()
+#7 C:\xampp\htdocs\codeigniterlearn\app\Controllers\Zoo.php(25): App\Controllers\Zoo->devolverListadoCompleto()
+#8 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(927): App\Controllers\Zoo->getIndex()
+#9 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zoo))
+#10 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniterlearn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\codeigniterlearn\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-12-14 11:34:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `zoos`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\ZooModel.php(17): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Zoo.php(296): App\Models\ZooModel->getZoo()
+ 7 APPPATH\Controllers\Zoo.php(25): App\Controllers\Zoo->devolverListadoCompleto()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Zoo->getIndex()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zoo))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-14 11:37:21 --> Too few arguments to function App\Controllers\Zoo::postEditar(), 0 passed in C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Zoo.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Zoo->postEditar()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zoo))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-14 14:40:43 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`zooweb`.`animales`, CONSTRAINT `animal_zoo` FOREIGN KEY (`zoo`) REFERENCES `zoos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\codeigniterlearn\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\codeigniterlearn\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `zo...', 0)
+#1 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `zo...')
+#2 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `zo...')
+#3 C:\xampp\htdocs\codeigniterlearn\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `zo...', Array, false)
+#4 C:\xampp\htdocs\codeigniterlearn\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\codeigniterlearn\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\codeigniterlearn\app\Controllers\Zoo.php(238): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(927): App\Controllers\Zoo->getBorrarzoologico('6')
+#8 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zoo))
+#9 C:\xampp\htdocs\codeigniterlearn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniterlearn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniterlearn\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-12-14 14:40:43 --> Cannot delete or update a parent row: a foreign key constraint fails (`zooweb`.`animales`, CONSTRAINT `animal_zoo` FOREIGN KEY (`zoo`) REFERENCES `zoos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `zoos`
+WHERE `id` = \'6\'
+AND `id` IN (\'6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `zoos`
+WHERE `id` = \'6\'
+AND `id` IN (\'6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `zoos`
+WHERE `id` = \'6\'
+AND `id` IN (\'6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `zoos`
+WHERE `id` = :id:
+AND `id` IN :id.1:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Zoo.php(238): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Zoo->getBorrarzoologico('6')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Zoo))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

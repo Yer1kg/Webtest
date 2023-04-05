@@ -1,0 +1,74 @@
+CRITICAL - 2022-12-21 11:51:12 --> adminlogueado filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('adminlogueado')
+ 2 SYSTEMPATH\CodeIgniter.php(446): CodeIgniter\Filters\Filters->enableFilter('adminlogueado', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 11:52:39 --> Call to undefined method App\Models\UsuarioModel::getUsuario
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\User.php(91): CodeIgniter\Model->__call('getUsuario', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->ListadoCompleto()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 11:57:50 --> Invalid file: usuarios/listado_usuario.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/listado_usuario.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/listado_usuario', [], true)
+ 3 APPPATH\Controllers\User.php(100): view('usuarios/listado_usuario', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->ListadoCompleto()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 12:41:09 --> Invalid file: usuarios/ver_usuario.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/ver_usuario.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/ver_usuario', [], true)
+ 3 APPPATH\Controllers\User.php(250): view('usuarios/ver_usuario', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\User->getVer('2')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-21 13:53:50 --> Class "App\Controllers\AdministradorController" does not exist
+in SYSTEMPATH\Commands\Utilities\Routes\AutoRouterImproved\ControllerMethodReader.php on line 48.
+ 1 SYSTEMPATH\Commands\Utilities\Routes\AutoRouterImproved\ControllerMethodReader.php(48): ReflectionClass->__construct('App\\Controllers\\AdministradorController')
+ 2 SYSTEMPATH\Commands\Utilities\Routes\AutoRouterImproved\AutoRouteCollector.php(75): CodeIgniter\Commands\Utilities\Routes\AutoRouterImproved\ControllerMethodReader->read('App\\Controllers\\AdministradorController', 'Home', 'index')
+ 3 SYSTEMPATH\Commands\Utilities\Routes.php(127): CodeIgniter\Commands\Utilities\Routes\AutoRouterImproved\AutoRouteCollector->get()
+ 4 SYSTEMPATH\CLI\Commands.php(63): CodeIgniter\Commands\Utilities\Routes->run([])
+ 5 SYSTEMPATH\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('routes', [])
+ 6 SYSTEMPATH\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([])
+ 7 SYSTEMPATH\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+ 9 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+11 ROOTPATH\spark(98): CodeIgniter\CLI\Console->run()
+CRITICAL - 2022-12-21 13:55:37 --> Class "App\Controllers\User" does not exist
+in SYSTEMPATH\Commands\Utilities\Routes\AutoRouterImproved\ControllerMethodReader.php on line 48.
+ 1 SYSTEMPATH\Commands\Utilities\Routes\AutoRouterImproved\ControllerMethodReader.php(48): ReflectionClass->__construct('App\\Controllers\\User')
+ 2 SYSTEMPATH\Commands\Utilities\Routes\AutoRouterImproved\AutoRouteCollector.php(75): CodeIgniter\Commands\Utilities\Routes\AutoRouterImproved\ControllerMethodReader->read('App\\Controllers\\User', 'Home', 'index')
+ 3 SYSTEMPATH\Commands\Utilities\Routes.php(127): CodeIgniter\Commands\Utilities\Routes\AutoRouterImproved\AutoRouteCollector->get()
+ 4 SYSTEMPATH\CLI\Commands.php(63): CodeIgniter\Commands\Utilities\Routes->run([])
+ 5 SYSTEMPATH\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('routes', [])
+ 6 SYSTEMPATH\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([])
+ 7 SYSTEMPATH\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+ 9 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+11 ROOTPATH\spark(98): CodeIgniter\CLI\Console->run()
+CRITICAL - 2022-12-21 13:57:59 --> Class "App\Controllers\User" does not exist
+in SYSTEMPATH\Commands\Utilities\Routes\AutoRouterImproved\ControllerMethodReader.php on line 48.
+ 1 SYSTEMPATH\Commands\Utilities\Routes\AutoRouterImproved\ControllerMethodReader.php(48): ReflectionClass->__construct('App\\Controllers\\User')
+ 2 SYSTEMPATH\Commands\Utilities\Routes\AutoRouterImproved\AutoRouteCollector.php(75): CodeIgniter\Commands\Utilities\Routes\AutoRouterImproved\ControllerMethodReader->read('App\\Controllers\\User', 'Home', 'index')
+ 3 SYSTEMPATH\Commands\Utilities\Routes.php(127): CodeIgniter\Commands\Utilities\Routes\AutoRouterImproved\AutoRouteCollector->get()
+ 4 SYSTEMPATH\CLI\Commands.php(63): CodeIgniter\Commands\Utilities\Routes->run([])
+ 5 SYSTEMPATH\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('routes', [])
+ 6 SYSTEMPATH\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([])
+ 7 SYSTEMPATH\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+ 9 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+11 ROOTPATH\spark(98): CodeIgniter\CLI\Console->run()
